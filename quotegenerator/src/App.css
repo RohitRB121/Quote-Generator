@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Grande', sans-serif;
+}
+
+body{
+  background: #ae7eae;  /*Given background color*/
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-box{
+  background: #fff; /*Given background color*/
+  width: 700px; /*Given specified width*/
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.quote-box h2{
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* 
+::before selector inserts something before the content of each selected elements
+::after selector to insert something after the content  */
+
+.quote-box h2::after{ /*Creates a pseudo element that is the last child of the selected element*/
+  content: '';
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.quote-box blockquote{
+  font-size: 26px;
+  min-height: 110px;  /*This is the minimum height it can be get increased as per the content*/
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{  /*Applying double inverted commas before and after of the quotes*/
+  content: '"';
+}
