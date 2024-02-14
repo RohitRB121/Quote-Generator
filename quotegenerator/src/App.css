@@ -59,3 +59,10 @@ body{
 .quote-box blockquote::before, .quote-box blockquote::after{  /*Applying double inverted commas before and after of the quotes*/
   content: '"';
 }
+
+.quote-box span{
+  display: block;
+  margin-top: 10px;
+  float: right; /* It will be in the right side */
+  position: relative; /**/
+}
