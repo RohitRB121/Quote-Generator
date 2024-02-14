@@ -11,6 +11,7 @@ function App() {
         <blockquote>Loading...</blockquote>
         <span>Loading...</span> 
       </div>
+      Hello
     </div>
   )
 }
