@@ -9,7 +9,7 @@ function App() {
       <div className="quote-box">
         <h2>Quote of the day</h2>
         <blockquote>Loading...</blockquote>
-        <span>Loading...</span>
+        <span>Loading...</span> 
       </div>
     </div>
   )
