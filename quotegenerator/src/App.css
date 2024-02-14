@@ -64,5 +64,15 @@ body{
   display: block;
   margin-top: 10px;
   float: right; /* It will be in the right side */
-  position: relative; /**/
+  position: relative;
+}
+
+.quote-box span::before{
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  top: 50%;
+  left: -30px;
 }
